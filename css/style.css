@@ -1,0 +1,392 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+body {
+  position: relative;
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Montserrat',sans-serif; */
+  letter-spacing: 0.025px;
+  font-size: 14px;
+  min-width: 1246px;
+  color: #222;
+}
+
+.user_nav .inner ul,
+.footer_wrap .cs_box,
+.gallery .tit {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*===== common =====*/
+.inner {
+  width: 1200px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.more_btn {
+  width: 190px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+/*===== HEADER =====*/
+
+.header {
+  position: relative;
+}
+
+.user_nav {
+  height: 35px;
+  background: #eee;
+}
+
+.user_nav .inner {
+  position: relative;
+}
+
+.user_nav .inner ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.user_nav .inner ul li {
+  float: left;
+  margin-right: 20px;
+  line-height: 35px;
+}
+
+.logo_area {
+  height: 100px;
+  position: relative;
+}
+
+.logo_area .sns a {
+  display: inline-block;
+  padding: 34px 20px 34px 0;
+
+}
+
+.logo_area .logo {
+  width: 180px;
+  height: 25px;
+  text-indent: -9999999px;
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../img/header_logo2.png) no-repeat;
+}
+
+.logo_area .search_wrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.logo_area .search_wrap .search {
+  width: 137px;
+  height: 35px;
+  line-height: 38px;
+  vertical-align: middle;
+  border: solid 2px #ddd;
+  border-right: 0;
+  padding: 0 10px;
+}
+
+.logo_area .search_wrap .submit_btn {
+  position: absolute;
+  top: 3px;
+  left: 137px;
+  font-size: 0;
+  appearance: none;
+  cursor: pointer;
+  margin: -5px;
+  width: 38px;
+  height: 38px;
+  background: url(../img/search.png) no-repeat center center;
+}
+
+.gnb_wrap {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  height: 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.gnb_wrap .gnb>li {
+  float: left;
+  line-height: 60px;
+  width: 16.66666667%;
+}
+
+.gnb_wrap .gnb li a {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.gnb_wrap .gnb .depth1 {
+  height: 0;
+}
+
+.header.on .gnb_wrap .gnb .depth1 {
+  height: 250px;
+}
+
+.gnb_wrap .gnb .depth1>li:first-child {
+  width: 100%;
+  padding: 40px 0 26px
+}
+
+.gnb_wrap .gnb .depth1 li {
+  padding: 26px 0;
+  line-height: 0;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.gnb_wrap .gnb_bg {
+  position: absolute;
+  top: 195px;
+  left: 0;
+  width: 100%;
+  /* height: 250px; */
+  background: #fff;
+  display: block;
+  z-index: 0;
+  transition: 0.5s;
+}
+
+.header.on .gnb_wrap .gnb_bg {
+  height: 250px;
+}
+
+/*===== SECTION1 구역 ======*/
+.section1 {
+  height: 600px;
+}
+
+.slide01 {
+  width: 100%;
+  height: 600px;
+  background: url(../img/main_vis01.jpg);
+}
+
+.slide02 {
+  width: 100%;
+  height: 600px;
+  background: url(../img/main_vis02.jpg);
+}
+
+.slide03 {
+  width: 100%;
+  height: 600px;
+  background: url(../img/main_vis03.jpg);
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 300px;
+  color: #8f9092;
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 300px;
+  color: #8f9092;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+/*===== SECTION2 구역 =====*/
+.section2 {
+  padding-bottom: 200px;
+}
+
+.gallery .tit {
+  text-align: center;
+  margin: 90px auto 70px;
+  font-size: 42px;
+  line-height: 120px;
+}
+
+.gallery .img_wrap {
+  width: 50%;
+}
+
+.gallery .img_wrap01,
+.gallery .img_wrap03 {
+  padding-right: 25px;
+}
+
+.gallery .img_wrap02,
+.gallery .img_wrap03 {
+  padding-left: 25px;
+}
+
+.gallery .img_wrap img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.gallery .txt_wrap {
+  width: 50%;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.gallery .txt_wrap01 {
+  padding: 45px 0 0 25px;
+}
+
+.gallery .txt_wrap02 {
+  padding: 65px 24px 0 0;
+}
+
+.gallery .txt_wrap03 {
+  padding: 75px 0 0 25px;
+}
+
+.gallery .txt_wrap04 {
+  padding: 100px 24px 0 0;
+}
+
+
+.gallery .txt_wrap .more_btn {
+  border-radius: 5px;
+  margin-top: 70px;
+  transition: 0.3s;
+}
+
+.gallery .txt_wrap .more_btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+/*===== FOOTER =====*/
+.footer_wrap {
+  background: #aaa;
+  color: #fff;
+  padding: 55px 0;
+  font-weight: 400;
+  height: 274px;
+}
+
+
+.footer_wrap .footer_logo {
+  width: 170px;
+  height: 20px;
+  background: url(../img/footer_logo.png) no-repeat;
+  text-indent: -99999;
+  color: transparent;
+  margin-bottom: 25px;
+}
+
+.footer_wrap .footer_logo img {
+  object-fit: cover;
+  height: 100%;
+  height: 100%;
+}
+
+.footer_wrap span,
+.footer_wrap a {
+  display: inline-block;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+.footer_wrap address .bar::after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  background: #fff;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.footer_wrap address p {
+  padding-top: 23px;
+}
+
+.footer_wrap .cs_box {
+  width: 300px;
+  height: 165px;
+  padding: 25px 15px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.footer_wrap .cs_box p:first-child {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.footer_wrap .cs_box p:nth-child(2) {
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 25px;
+  white-space: nowrap;
+}
+
+.footer_wrap .cs_box strong {
+  font-size: 36px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.top_btn {
+  position: fixed;
+  right: 75px;
+  bottom: 65px;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+  text-indent: -999999999;
+  color: transparent;
+}
+
+.top_btn::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  border-bottom: 15px solid #fff;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
