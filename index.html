@@ -1,203 +1,331 @@
-<!DOCTYPE html>
-<html lang="ko">
+< !DOCTYPE html>
+  <html lang="ko">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DDlab_좋은제품연구소</title>
-  <!-- swiper css -->
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <!-- css 파일 연결 -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- swiper js -->
-  <script src="js/jquery-1.12.4.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/custume.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDlab_좋은제품연구소</title>
+    <!-- Swiperr CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Aos CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuer CDN -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- Swiper js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/custume.js"></script>
+  </head>
 
-<body>
-  <Header class="header_wrap">
-    <div class="header">
-      <div class="user_nav">
-        <div class="inner">
-          <ul class="clear">
-            <li><a href="/">Login</a></li>
-            <li><a href="/">Join us</a></li>
-            <li><a href="/">Mypage</a></li>
-            <li><a href="/">Cart</a></li>
+  <body>
+    <Header class="header_wrap">
+      <div class="header">
+        <div class="user_nav">
+          <div class="inner">
+            <ul class="clear">
+              <li><a href="/">Login</a></li>
+              <li><a href="/">Join us</a></li>
+              <li><a href="/">Mypage</a></li>
+              <li><a href="/">Cart</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo_area inner">
+          <div class="sns"><a href="/"><img src="img/facebook_ico.png" alt=""></a><a href="/"><img
+                src="img/blog_ico.png" alt=""></a><a href="/"><img src="img/insta_ico.png" alt=""></a><a href="/"><img
+                src="img/utube_ico.png" alt=""></a></div>
+          <h1 class="logo"><a href="index.html">로고</a></h1>
+          <div class="search_wrap"><input type="text" class="search" placeholder="search" name="search_str"><input
+              type="submit" class="submit_btn"></div>
+        </div>
+        <div class="gnb_bg"></div>
+        <div class="gnb_wrap">
+          <ul class="gnb inner clear">
+            <li><a href="/">ABOUT US</a>
+              <ul class="depth1">
+                <li><a href="/">회사소개</a></li>
+              </ul>
+            </li>
+            <li><a href="/">PRODUCT</a>
+              <ul class="depth1">
+                <li><a href="/">모니터</a></li>
+                <li><a href="/">TV</a></li>
+                <li><a href="/">생활가전</a></li>
+                <li><a href="/">주변기기</a></li>
+              </ul>
+            </li>
+            <li><a href="/">COMMUNITY</a>
+              <ul class="depth1">
+                <li><a href="/">News</a></li>
+                <li><a href="/">Event</a></li>
+                <li><a href="/">Notice</a></li>
+                <li><a href="/">Review</a></li>
+                <li><a href="/">Download</a></li>
+              </ul>
+            </li>
+            <li><a href="/">CS CENTER</a>
+              <ul class="depth1">
+                <li><a href="/">FAQ</a></li>
+                <li><a href="/">A/S 및 규정</a></li>
+                <li><a href="/">A/S 문의 및 접수</a></li>
+              </ul>
+            </li>
+            <li><a href="/">CONTACT</a>
+              <ul class="depth1">
+                <li><a href="/">오시는 길</a></li>
+              </ul>
+            </li>
+            <li><a href="/">STORE</a>
+              <ul class="depth1">
+                <li><a href="/">온라인스토어</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="logo_area inner">
-        <div class="sns">
-          <a href="/"><img src="img/facebook_ico.png" alt=""></a>
-          <a href="/"><img src="img/blog_ico.png" alt=""></a>
-          <a href="/"><img src="img/insta_ico.png" alt=""></a>
-          <a href="/"><img src="img/utube_ico.png" alt=""></a>
+    </Header>
+    <Main>
+      <section class="section1">
+        <!-- Swiper -->
+        <div id="main_vis" class="swiper-container swiper01">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide01"></div>
+            <div class="swiper-slide slide02"></div>
+            <div class="swiper-slide slide03"></div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-        <h1 class="logo">
-          <a href="index.html">로고</a>
-        </h1>
-        <div class="search_wrap">
-          <input type="text" class="search" placeholder="search" name="search_str">
-          <input type="submit" class="submit_btn">
+      </section>
+      <section class="section2">
+        <div class="galaery_wrap inner">
+          <div class="gallery gallery01 clear">
+            <h3 class="tit" data-aos="fade-up">About us</h3>
+            <div class="img_wrap img_wrap01 left" data-aos="fade-up" data-aos-duration="1000"><img src="img/intro01.jpg"
+                alt=""></div>
+            <div class="txt_wrap txt_wrap01 right">
+              <p data-aos="fade-up" data-aos-duration="1500">좋은제품연구소가 추구하는 좋은 제품이란 5G를 만족하는 제품입니다. 좋은 생각(Good Think),
+                좋은 품질(Good Quality),
+                좋은 디자인(Good Design),
+                좋은 가격(Good Price),
+                좋은 서비스(Good Service)로 늘 소비자의 입장에서 제품을 바라보고 생각하며,
+                고객의 마음을 제품에 적용하고자 합니다.</p><a href="/" class="more_btn" data-aos="fade-up" data-aos-duration="2000">자세히
+                알아보기</a>
+            </div>
+          </div>
+          <div class="gallery gallery02 clear">
+            <h3 class="tit" data-aos="fade-up">Monitor</h3>
+            <div class="img_wrap img_wrap02 right" data-aos="fade-up" data-aos-duration="1000"><img
+                src="img/intro02.jpg" alt=""></div>
+            <div class="txt_wrap txt_wrap02 left">
+              <p data-aos="fade-up" data-aos-duration="1500">좋은 제품 연구소 AMF는 많은 고객님의 니즈와 모니터 시장의 제품을 분석하여,
+                사실적이고 성능이 뛰어난 제품들을 고객님들께 부담없이 제공하기 위해서 최선을 다 하고 있습니다</p><a href="/" class="more_btn" data-aos="fade-up"
+                data-aos-duration="2000">자세히 알아보기</a>
+            </div>
+          </div>
+          <div class="gallery gallery03 clear">
+            <h3 class="tit" data-aos="fade-up">TV</h3>
+            <div class="img_wrap img_wrap03  left" data-aos="fade-up" data-aos-duration="1000"><img
+                src="img/intro03.jpg" alt=""></div>
+            <div class="txt_wrap txt_wrap03 right">
+              <p data-aos="fade-up" data-aos-duration="1500">좋은 제품 연구소 QUQU는 기존의 UHD TV를 많은 고객님께 합리적인 가격으로 제공하기 위해 다양한
+                제품을 개발 중입니다.</p><a href="/" class="more_btn" data-aos="fade-up" data-aos-duration="2000">자세히 알아보기</a>
+            </div>
+          </div>
+          <div class="gallery gallery04 clear">
+            <h3 class="tit" data-aos="fade-up">Home appliances</h3>
+            <div class="img_wrap img_wrap04 right" data-aos="fade-up" data-aos-duration="1000"><img
+                src="img/intro04.jpg" alt=""></div>
+            <div class="txt_wrap txt_wrap04 left">
+              <p data-aos="fade-up" data-aos-duration="1500">좋은 제품 연구소 QUQU는 기존의 UHD TV를 많은 고객님께 합리적인 가격으로 제공하기 위해 다양한
+                제품을 개발 중입니다</p><a href="/" class="more_btn" data-aos="fade-up" data-aos-duration="2000">자세히 알아보기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section3">
+        <h3 class="tit" fade-up>추천 제품</h3>
+        <div class="article article01">
+          <div class="inner">
+            <div class="txt_wrap" data-aos="fade-up" data-aos-duration="1000">
+              <strong>AMF24PV144</strong>
+              <p>이 제품은 배틀그라운드 및 FPS에 최적화 되어 있는 144Hz 주사율을 가지고 있는 제품으로써 게임 환경에 가장 어울리는 제품이며,
+                또한 기존에 모니터 디자인에 많은 차이점을 두어 Z스탠드라는 새로운 디자인에 도전했습니다. </p>
+              <div class="more_btn">자세히 보기</div>
+            </div>
+            <img src="img/banner_item01.png" alt="" data-aos="fade-up" data-aos-duration="1800">
+          </div>
+        </div>
+        <div class="article article02">
+          <div class="inner">
+            <div class="txt_wrap" data-aos="fade-up" data-aos-duration="1000">
+              <strong>G65N4K</strong>
+              <p>좋은 제품 연구소 G65N4K는 UHD TV으로써 대화면으로 즐기는 선명한 화질과 다양한 포트로 PS4 및 엑스박스,
+                USB로 연결 후 게임 및 영화,
+                IPTV를 즐길 수 있는 제품입니다. </p>
+              <div class="more_btn">자세히 보기</div>
+            </div>
+            <img src="img/banner_item02.png" alt="" data-aos="fade-up" data-aos-duration="1800">
+          </div>
+        </div>
+        <div class="article article03">
+          <div class="inner">
+            <div class="txt_wrap" data-aos="fade-up" data-aos-duration="1000">
+              <strong>에어프라이기</strong>
+              <p>좋은제품연구소 GA-10는 오픈형 에어프라이기 로 10L의 대용량 에어프라이기입니다. </p>
+              <div class="more_btn">자세히 보기</div>
+            </div>
+            <img src="img/banner_item03.png" alt="" data-aos="fade-up" data-aos-duration="18     00">
+          </div>
+        </div>
+      </section>
+      <section class="section4">
+        <div class="inner clear">
+          <div class="event_box box01">
+            <div class="img_wrap">
+              <img src="img/event01.jpg" alt="">
+            </div>
+            <span class="small">
+              [2018.12.01 ~ 2018.12.26]
+            </span>
+            <strong>크리스마스 랜덤박스 증정 이벤트</strong>
+            <p>좋은제품연구소가 크리스마스를 맞이하여 랜덤박스 증정 이벤트를 진행한다. 모니터와 TV 구입자를 대상으로 진행하는 이번 이벤트는 총 200분ㅇㅇㅇㅇㅇㅇ
+              KXG-언더독 모니터와 TV(일부 제품 제외) 구입자를 대상으로 진행하는 이번 이벤트는 총 200분에게 커브드 모니터, 언더독 게이밍 체어, 블루투스 이어폰, 게이밍 스툴, QX260 번지,
+              게이밍 장패드를 랜덤박스를 통해 증정한다.</p>
+            <div class="more_btn">
+              자세히 보기
+            </div>
+          </div>
+          <div class="event_box box02">
+            <div class="img_wrap">
+              <img src="img/event01.jpg" alt="">
+            </div>
+            <span class="small">
+              [2018.12.01 ~ 2018.12.26]
+            </span>
+            <strong>크리스마스 랜덤박스 증정 이벤트</strong>
+            <p>좋은제품연구소가 크리스마스를 맞이하여 랜덤박스 증정 이벤트를 진행한다. 모니터와 TV 구입자를 대상으로 진행하는 이번 이벤트는 총 200분ㅇㅇㅇㅇㅇㅇ
+              KXG-언더독 모니터와 TV(일부 제품 제외) 구입자를 대상으로 진행하는 이번 이벤트는 총 200분에게 커브드 모니터, 언더독 게이밍 체어, 블루투스 이어폰, 게이밍 스툴, QX260 번지,
+              게이밍 장패드를 랜덤박스를 통해 증정한다.</p>
+            <div class="more_btn">
+              자세히 보기
+            </div>
+          </div>
+          <div class="event_box box03">
+            <div class="img_wrap">
+              <img src="img/event01.jpg" alt="">
+            </div>
+            <span class="small">
+              [2018.12.01 ~ 2018.12.26]
+            </span>
+            <strong>크리스마스 랜덤박스 증정 이벤트</strong>
+            <p>좋은제품연구소가 크리스마스를 맞이하여 랜덤박스 증정 이벤트를 진행한다. 모니터와 TV 구입자를 대상으로 진행하는 이번 이벤트는 총 200분ㅇㅇㅇㅇㅇㅇ
+              KXG-언더독 모니터와 TV(일부 제품 제외) 구입자를 대상으로 진행하는 이번 이벤트는 총 200분에게 커브드 모니터, 언더독 게이밍 체어, 블루투스 이어폰, 게이밍 스툴, QX260 번지,
+              게이밍 장패드를 랜덤박스를 통해 증정한다.</p>
+            <div class="more_btn">
+              자세히 보기
+            </div>
+          </div>
+          <div class="event_box box04">
+            <div class="img_wrap">
+              <img src="img/event01.jpg" alt="">
+            </div>
+            <span class="small">
+              [2018.12.01 ~ 2018.12.26]
+            </span>
+            <strong>크리스마스 랜덤박스 증정 이벤트</strong>
+            <p>좋은제품연구소가 크리스마스를 맞이하여 랜덤박스 증정 이벤트를 진행한다. 모니터와 TV 구입자를 대상으로 진행하는 이번 이벤트는 총 200분ㅇㅇㅇㅇㅇㅇ
+              KXG-언더독 모니터와 TV(일부 제품 제외) 구입자를 대상으로 진행하는 이번 이벤트는 총 200분에게 커브드 모니터, 언더독 게이밍 체어, 블루투스 이어폰, 게이밍 스툴, QX260 번지,
+              게이밍 장패드를 랜덤박스를 통해 증정한다.</p>
+            <div class="more_btn">
+              자세히 보기
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section05">
+        <div class="inner">
+          <h3 class="tit">Best Reviews</h3>
+          <div id="reviews" class="swiper-container  swiper02">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide01">
+                <div class="img_wrap">
+                  <img src="img/reveiw01.jpg" alt="">
+                </div>
+                <div class="txt_wrap">
+                  <strong>GGLAB 에어프라이기 솔직 구매후기!!</strong>
+                  <p>에어프라이기를 살까 말까 엄청 고민하다가, 이번에 GGLAB 신년 이벤트를 한다길래 저렴한 가격에 구입했어요!! 에어프라이어로 감자튀김을 만들어 먹었는데, 아래로 기름이 쫙
+                    빠지면서 바삭하고 맛있게 구워지더라구요~ 남편 안주로도, 한끼 식사로도, 너무 좋습니다! GGLAB에서 에어프라이어 구매하길 100번 잘했어요! 구매 고민하시는 분들은 지금 이벤트
+                    중이니까 바로 구입하세요!! 가성비 최고에요 ~ 요리의 품질이 달라졌어요 만족… .100%</p>
+                  <div class="more_btn">
+                    자세히 알아보기
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide02">
+                <div class="img_wrap">
+                  <img src="img/review02.jpg" alt="">
+                </div>
+                <div class="txt_wrap">
+                  <strong>[AMF27PV165] - "뮤트" 체험단리뷰</strong>
+                  <p>안녕하세요.여러분들께 테크놀로지와 관련된 다양한 리뷰, 필드테스트 후기를 전행드리는 감성 IT블로거 뮤토입니다.한동안 스마트기기나 음향에 관련된 콘텐츠만 주구장창 쓰다가 요근래
+                    PC에 대한 이야기를 외면...</p>
+                  <div class="more_btn">
+                    자세히 알아보기
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide03">
+                <div class="img_wrap">
+                  <img src="img/review03.jpg" alt="">
+                </div>
+                <div class="txt_wrap">
+                  <strong>[AMF24PV144] - 체험단 "오베르뉴 크로나" 님</strong>
+                  <p>
+                    안녕하세요. 오베르뉴 크로나입니다.
+
+                    오늘 소개해드릴 제품은 좋은제품연구소의 신제품 AMF24PV144 게이밍 모니터입니다.해당 제품은 24인치 FHD 해상도를 지원하며, 144HZ의 고주사율, PVA 패널, HDR
+                    효과와 블루 라이...</p>
+                  <div class="more_btn">
+                    자세히 알아보기
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </Main>
+    <Footer class="footer_wrap">
+      <div class="footer inner clear">
+        <div class="left">
+          <h2 class="footer_logo">푸터로고 </h2>
+          <address><span class="bar">㈜좋은제품연구소</span><span class="bar">대표 : 박현주</span><span>주소 : 서울특별시 강서구 방화대로 21길 64
+              1층</span><br /><a class="bar" href="tle: 070-7733-1029">대표번호 : 070-7733-1029</a><a class="bar"
+              href="tel:031-312-8689 ">FAX : 031-312-8689 </a><a herf=" emailto:kty@gglab.co.kr">kty@gglab.co.kr</a>
+            <p>Copyrights by ㈜좋은제품연구소. <a href="/">All rights reserved. Designed & Hosted by MODOOM.</a></p>
+          </address>
+        </div>
+        <div class="cs_box right">
+          <p>Customer Center</p>
+          <p>09:00~18:00 (주말/공휴일 휴무)</p><strong>070-7733-1029</strong>
         </div>
       </div>
-      <div class="gnb_bg"></div>
-      <div class="gnb_wrap">
-        <ul class="gnb inner clear">
-          <li><a href="/">ABOUT US</a>
-            <ul class="depth1">
-              <li><a href="/">회사소개</a></li>
-            </ul>
-          </li>
-          <li><a href="/">PRODUCT</a>
-            <ul class="depth1">
-              <li><a href="/">모니터</a></li>
-              <li><a href="/">TV</a></li>
-              <li><a href="/">생활가전</a></li>
-              <li><a href="/">주변기기</a></li>
-            </ul>
-          </li>
-          <li><a href="/">COMMUNITY</a>
-            <ul class="depth1">
-              <li><a href="/">News</a></li>
-              <li><a href="/">Event</a></li>
-              <li><a href="/">Notice</a></li>
-              <li><a href="/">Review</a></li>
-              <li><a href="/">Download</a></li>
-            </ul>
-          </li>
-          <li><a href="/">CS CENTER</a>
-            <ul class="depth1">
-              <li><a href="/">FAQ</a></li>
-              <li><a href="/">A/S 및 규정</a></li>
-              <li><a href="/">A/S 문의 및 접수</a></li>
-            </ul>
-          </li>
-          <li><a href="/">CONTACT</a>
-            <ul class="depth1">
-              <li><a href="/">오시는 길</a></li>
-            </ul>
-          </li>
-          <li><a href="/">STORE</a>
-            <ul class="depth1">
-              <li><a href="/">온라인스토어</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </Header>
+    </Footer>
+    <div class="top_btn"><a href="#">맨위로가기</a></div>
+  </body>
 
-  <Main>
-
-    <section class="section1">
-      <!-- Swiper -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide01">
-
-          </div>
-          <div class="swiper-slide slide02">
-
-          </div>
-          <div class="swiper-slide slide03">
-
-          </div>
-        </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-
-    <section class="section2">
-      <div class="galaery_wrap inner">
-        <div class="gallery gallery01 clear">
-          <h3 class="tit">
-            About us
-          </h3>
-          <div class="img_wrap img_wrap01 left">
-            <img src="img/intro01.jpg" alt="">
-          </div>
-          <div class="txt_wrap txt_wrap01 right">
-            <p>좋은제품연구소가 추구하는 좋은 제품이란 5G를 만족하는 제품입니다.
-              좋은 생각(Good Think) , 좋은 품질(Good Quality) , 좋은 디자인(Good Design), 좋은 가격(Good Price), 좋은 서비스(Good Service)로 늘
-              소비자의 입장에서 제품을 바라보고 생각하며, 고객의 마음을 제품에 적용하고자 합니다.</p>
-            <a href="/" class="more_btn">자세히 알아보기</a>
-          </div>
-        </div>
-        <div class="gallery gallery02 clear">
-          <h3 class="tit">
-            Monitor
-          </h3>
-          <div class="img_wrap img_wrap02 right">
-            <img src="img/intro02.jpg" alt="">
-          </div>
-          <div class="txt_wrap txt_wrap02 left">
-            <p>좋은 제품 연구소 AMF는 많은 고객님의 니즈와 모니터 시장의 제품을 분석하여, 사실적이고 성능이 뛰어난 제품들을 고객님들께 부담없이 제공하기 위해서 최선을 다 하고 있습니다</p>
-            <a href="/" class="more_btn">자세히 알아보기</a>
-          </div>
-        </div>
-        <div class="gallery gallery03 clear">
-          <h3 class="tit">
-            About us
-          </h3>
-          <div class="img_wrap img_wrap03  left">
-            <img src="img/intro03.jpg" alt="">
-          </div>
-          <div class="txt_wrap txt_wrap03 right">
-            <p>좋은 제품 연구소 QUQU는 기존의 UHD TV를 많은 고객님께 합리적인 가격으로 제공하기 위해 다양한 제품을 개발 중입니다.</p>
-            <a href="/" class="more_btn">자세히 알아보기</a>
-          </div>
-        </div>
-        <div class="gallery gallery04 clear">
-          <h3 class="tit">
-            TV
-          </h3>
-          <div class="img_wrap img_wrap04 right">
-            <img src="img/intro04.jpg" alt="">
-          </div>
-          <div class="txt_wrap txt_wrap04 left">
-            <p>좋은 제품 연구소 QUQU는 기존의 UHD TV를 많은 고객님께 합리적인 가격으로 제공하기 위해 다양한 제품을 개발 중입니다</p>
-            <a href="/" class="more_btn">자세히 알아보기</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </Main>
-
-
-  <Footer class="footer_wrap">
-    <div class="footer inner clear">
-      <div class="left">
-        <h2 class="footer_logo">
-          푸터로고
-        </h2>
-        <address>
-          <span class="bar">㈜좋은제품연구소</span>
-          <span class="bar">대표 : 박현주</span>
-          <span>주소 : 서울특별시 강서구 방화대로 21길 64 1층</span>
-          <br />
-          <a class="bar" href="tle: 070-7733-1029">대표번호 : 070-7733-1029</a>
-          <a class="bar" href="tel:031-312-8689 ">FAX : 031-312-8689 </a>
-          <a herf=" emailto:kty@gglab.co.kr">kty@gglab.co.kr</a>
-          <p>Copyrights by ㈜좋은제품연구소. <a href="/">All rights reserved. Designed & Hosted by MODOOM.</a></p>
-        </address>
-      </div>
-      <div class="cs_box right">
-        <p>Customer Center</p>
-        <p>09:00 ~ 18:00 (주말/공휴일 휴무)</p>
-        <strong>070-7733-1029</strong>
-      </div>
-    </div>
-  </Footer>
-  <div class="top_btn"><a href="#">맨위로가기</a></div>
-</body>
-
-</html>
+  </html>

@@ -125,7 +125,6 @@ body {
   cursor: pointer;
   margin: -5px;
   width: 38px;
-  height: 38px;
   background: url(../img/search.png) no-repeat center center;
 }
 
@@ -189,43 +188,43 @@ body {
   height: 600px;
 }
 
-.slide01 {
+.section1 .slide01 {
   width: 100%;
   height: 600px;
   background: url(../img/main_vis01.jpg);
 }
 
-.slide02 {
+.section1 .slide02 {
   width: 100%;
   height: 600px;
   background: url(../img/main_vis02.jpg);
 }
 
-.slide03 {
+.section1 .slide03 {
   width: 100%;
   height: 600px;
   background: url(../img/main_vis03.jpg);
 }
 
-.swiper-button-prev {
+.section1 .swiper-button-prev {
   position: absolute;
   left: 300px;
   color: #8f9092;
 }
 
-.swiper-button-next {
+.section1 .swiper-button-next {
   position: absolute;
   right: 300px;
   color: #8f9092;
 }
 
-.swiper-pagination-bullet {
+.section1 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   border: 2px solid #fff;
 }
 
-.swiper-pagination-bullet-active {
+.section1 .swiper-pagination-bullet-active {
   background: #fff;
 }
 
@@ -256,9 +255,8 @@ body {
 }
 
 .gallery .img_wrap img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 520px;
+  height: 320px;
 }
 
 
@@ -294,6 +292,167 @@ body {
 .gallery .txt_wrap .more_btn:hover {
   background: #000;
   color: #fff;
+}
+
+/*===== SECTION3 구역 =====*/
+.section3 {
+  width: 100%;
+}
+
+.section3 .tit {
+  font-size: 42px;
+  font-weight: medium;
+  padding: 55px 0 65px;
+  text-align: center;
+}
+
+.section3 .article {
+  width: 100%;
+  height: 515px;
+  overflow: hidden;
+}
+
+.section3 .article01 {
+  background: url(../img/banner_bg01.png) no-repeat;
+}
+
+.section3 .article02 {
+  background: url(../img/banner_bg02.png) no-repeat;
+}
+
+.section3 .article03 {
+  background: url(../img/banner_bg03.png) no-repeat;
+}
+
+.section3 .article .inner {
+  position: relative;
+}
+
+.section3 .article .txt_wrap {
+  margin-top: 50px;
+  position: relative;
+  top: 50px;
+  width: 375px;
+  height: 325px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 30px 20px;
+  font-size: 18px;
+  z-index: 999;
+}
+
+.section3 .article .txt_wrap strong {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.section3 .article .txt_wrap .more_btn {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.section3 .article .inner>img {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+}
+
+/*===== SECTION4 =====*/
+.section4 {
+  width: 100%;
+  padding: 100px 0 65px;
+}
+
+.box01,
+.box03 {
+  padding-right: 50px;
+}
+
+.box02,
+.box04 {
+  padding-left: 50px;
+}
+
+.section4 .event_box {
+  width: 50%;
+  overflow: hidden;
+  float: left;
+}
+
+.section4 .event_box .img_wrap {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.section4 .event_box:nth-child(3) .img_wrap,
+.section4 .event_box:nth-child(4) .img_wrap {
+  margin-top: 50px;
+}
+
+.section4 .event_box .small {
+  color: #8f8f8f;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.section4 .event_box strong {
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.section4 .event_box p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+/*===== SECTION5 =====*/
+.section5 .tit {
+  font-size: 42px;
+  text-align: center;
+  padding: 15px 0 70px;
+}
+
+.section5 .swiper-slide {
+  position: relative;
+  border: 1px solid #000;
+}
+
+.section5 .img_wrap {
+  width: 520px;
+  height: 350px;
+  margin: 30px;
+
+}
+
+.section5 .img_wrap img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section5 .txt_wrap {
+  border: 1px solid #222;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding: 30px 0 30px 30px;
+}
+
+.section5 .txt_wrap strong {
+  display: block;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 
